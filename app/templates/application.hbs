@@ -10,6 +10,7 @@
 <div id="mainContainer">
 <div id="sideBar">
   <!-- RANDOM -->
+  {{#link-to "index"}}
   <svg class="menuItem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.59 51.52">
     <title>Random</title>
     <g id="Layer_2" data-name="Layer 2">
@@ -23,7 +24,9 @@
       </g>
     </g>
   </svg>
+  {{/link-to}}
   <!-- CREATE -->
+  {{#link-to "create"}}
   <svg class="menuItem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.67 51.73">
     <defs><style>.cls-1{fill:#231f20;}</style></defs>
     <title>Create</title>
@@ -38,7 +41,9 @@
       </g>
     </g>
   </svg>
+  {{/link-to}}
   <!-- SHARE -->
+  {{#link-to "share"}}
   <svg class="menuItem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.29 51.86">
     <defs><style>.cls-1{fill:#231f20;}</style></defs>
     <title>Share</title>
@@ -52,7 +57,9 @@
       </g>
     </g>
   </svg>
+  {{/link-to}}
   <!-- ABOUT -->
+  {{#link-to "about"}}
   <svg class="menuItem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.14 52.43">
     <defs><style>.cls-1{fill:#231f20;}</style></defs>
     <title>About</title>
@@ -66,16 +73,23 @@
       </g>
     </g>
   </svg>
+  {{/link-to}}
 </div>
-
   <div id="rockContainer">
     <div id="rockSpace">
+      {{#each model as |rock|}}
+      <!-- {{rock.rock}}
+      {{rock.eye}}
+      {{rock.pupil}} -->
       <Rock-1/>
       <Eye-Ball-1/>
       <Pupil-1/>
+      {{/each}}
     </div>
     <div id="rockName">
-      Rock Frienderino
+      {{#each model as |rock|}}
+      {{rock.name}}
+      {{/each}}
     </div>
   </div>
 </div>

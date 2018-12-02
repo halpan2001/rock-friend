@@ -2,18 +2,16 @@ body{
   padding: 20px;
   font-family: sans-serif;
   color: black;
-  background-color: #D6EDE5;
+  background-color: #7FA8A6;
 }
-
+/* APPLICATION.HBS */
 #title{
   font-size: 32pt;
   font-weight: 600;
 }
-
 #titleText{
   height: 50px;
 }
-
 #BroughtToYouByHalPan{
   height: 20px;
 }
@@ -31,7 +29,6 @@ body{
   position: relative;
   float: left;
 }
-
 .menuItem{
   height: 40px;
   padding: 10px;
@@ -66,14 +63,12 @@ body{
   height: 400px;
   width: 80%;
 }
-
 #rockSpace{
   width: 400px;
   height: 230px;
   /* border: 1px solid blue; */
   position: relative;
 }
-
 #rockName{
   /* border: 1px solid red; */
   width: 800px;
@@ -89,9 +84,8 @@ body{
   z-index: 1;
 }
 .rockBody path{
-  fill: #9C3350;
+  fill: #5AB1BB;
 }
-
 #rock4{
   /* border: 1px solid red; */
   margin-top: 45px;
@@ -131,14 +125,12 @@ body{
   left: 25%;
   z-index: 2;
 }
-
 .rockPupil ellipse{
-  fill: #A76227;
+  fill: #fe5ab5;
 }
 .rockPupil circle{
-  fill: #A76227;
+  fill: #fe5ab5;
 }
-
 #rockPupil2{
   height: 20%;
   left: 22%;
@@ -163,7 +155,7 @@ body{
   top: 29%;
 }
 
-
+/* ALL ROUTES */
 #bottomBar{
   width: 100%;
   height: 300px;
@@ -172,12 +164,81 @@ body{
   background-color: black;
   position: absolute;
   padding: 10px;
+  display: flex;
+  flex-direction:row;
+}
+ #bottomBar > div{ /*select all div's whose parent is #bottomBar */
+  position: relative;
+  width: 20%;
+  border: 1px red solid;
 }
 
 .white{
   color: white;
 }
 
+/* CREATE.HBS */
+.createTitleText{
+  height: 40px;
+  border: red 1px solid;
+}
+.pickContent{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  border: blue 1px solid;
+}
+
+#pickColor{
+}
+#colorSquares{
+  height: 100%;
+  flex-grow: 1;
+  border: green 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+#colorSquares > div{
+  width: 80px;
+  height: 30px;
+  position: relative;
+}
+#pickBackgroundColor{
+  background-color: #7FA8A6;
+}
+#pickBodyColor{
+  background-color: #5AB1BB;
+}
+#pickPupilColor{
+  background-color: #fe5ab5;
+}
+
+#colorText{
+  height: 100%;
+  flex-grow: 2;
+  border: green 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+#colorText > img{
+  height: 20%;
+  margin-right: 30px;
+}
+
+#pickPupil{
+
+}
+#pickEyeBall{
+
+
+}
+#pickBody{
+
+}
+#pickData{
+
+}
 
 /* Javasc
 List of rockSpace
