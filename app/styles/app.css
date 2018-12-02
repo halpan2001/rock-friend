@@ -71,7 +71,7 @@ body{
 }
 #rockName{
   /* border: 1px solid red; */
-  width: 800px;
+  width: 100%;
   height: 50px;
   font-size: 24pt;
   font-family: 'Varela Round', sans-serif;
@@ -157,20 +157,22 @@ body{
 
 /* ALL ROUTES */
 #bottomBar{
-  width: 100%;
-  height: 300px;
+  width: 95%;
+  height: 250px;
   left: 0px;
   /* opacity: .8; */
   background-color: black;
   position: absolute;
   padding: 10px;
+  padding-left: 5%;
   display: flex;
   flex-direction:row;
 }
  #bottomBar > div{ /*select all div's whose parent is #bottomBar */
   position: relative;
-  width: 20%;
-  border: 1px red solid;
+  width: 290px;
+  margin-top: 10px;
+  /* border: 1px red solid; */
 }
 
 .white{
@@ -180,24 +182,26 @@ body{
 /* CREATE.HBS */
 .createTitleText{
   height: 40px;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 .pickContent{
   width: 100%;
-  height: 80%;
+  height: 60%;
   position: relative;
   display: flex;
-  border: blue 1px solid;
+  /* border: blue 1px solid; */
+  margin-top: 20px;
 }
 
 #pickColor{
 }
 #colorSquares{
   height: 100%;
-  flex-grow: 1;
-  border: green 1px solid;
+  width: 100px;
+  /* border: green 1px solid; */
   display: flex;
   flex-wrap: wrap;
+  margin-right: 10px;
 }
 #colorSquares > div{
   width: 80px;
@@ -216,28 +220,67 @@ body{
 
 #colorText{
   height: 100%;
-  flex-grow: 2;
-  border: green 1px solid;
+  width: 300px;
+  /* border: green 1px solid; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 #colorText > img{
-  height: 20%;
-  margin-right: 30px;
+  height: 35px;
+  margin-right: 60px;
+  /* margin-right: 30px; */
 }
 
 #pickPupil{
-
 }
+.selectDiv{
+  width: 90px;
+  height: 60px;
+  /* border: 1px white solid; */
+  position: relative;
+}
+.selectDiv svg:hover{
+  border-radius: 1px white solid;
+}
+
 #pickEyeBall{
-
-
+  width: 200px;
 }
 #pickBody{
+}
+.selectDiv #rock4{
+  margin-top: 24px;
+}
+.selectDiv #rock6{
+  margin-top: 12px;
+}
+
+#pickData{
+}
+
+.dataOption{
+  height: 50px;
+  margin-left: 60px;
+  transition: ease;
+  transition-duration: .5s;
+}
+
+.dataOption:hover{
+  background-color: white;
+  transition: ease;
+  transition-duration: .5s;
+}
+.dataOption:hover text{
+  fill: black;
+  transition: ease;
+  transition-duration: .5s;
 
 }
-#pickData{
 
+#saveNew{
+  height: 100px;
+  margin-right: 100px;
 }
 
 /* Javasc
