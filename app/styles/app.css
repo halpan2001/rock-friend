@@ -1,0 +1,186 @@
+body{
+  padding: 20px;
+  font-family: sans-serif;
+  color: black;
+  background-color: #D6EDE5;
+}
+
+#title{
+  font-size: 32pt;
+  font-weight: 600;
+}
+
+#titleText{
+  height: 50px;
+}
+
+#BroughtToYouByHalPan{
+  height: 20px;
+}
+
+#mainContainer{
+  margin-top: 40px;
+  /* border: 1px red solid; */
+  display: flex;
+  align-content: center;
+}
+
+#sideBar{
+  width: 20%;
+  /* border: 1px red solid; */
+  position: relative;
+  float: left;
+}
+
+.menuItem{
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.menuItem path{
+  height: 40px;
+  margin-bottom: 30px;
+  fill: black;
+  transition: ease;
+  transition-duration: .5s;
+}
+.menuItem:hover{
+  background-color: black;
+  transition: ease;
+  transition-duration: .5s;
+}
+.menuItem:hover path{
+  fill: white;
+  transition: ease;
+  transition-duration: .5s;
+
+}
+
+#rockContainer{
+  /* border: 1px red solid; */
+  positiion: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 80%;
+}
+
+#rockSpace{
+  width: 400px;
+  height: 230px;
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+#rockName{
+  /* border: 1px solid red; */
+  width: 800px;
+  height: 50px;
+  font-size: 24pt;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.rockBody{
+  position: relative;
+  z-index: 1;
+}
+.rockBody path{
+  fill: #9C3350;
+}
+
+#rock4{
+  /* border: 1px solid red; */
+  margin-top: 45px;
+}
+#rock6{
+  margin-top: 35px;
+}
+
+.rockEyeBall{
+  height: 30%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+}
+.rockEyeBall circle{
+  fill: white;
+}
+.rockEyeBall ellipse{
+  fill: white;
+}
+#rockEyeBall3{
+  height: 23%;
+  top: 23%;
+  left: 18%;
+
+}
+#rockEyeBall4{
+  height: 35%;
+  left: 17%;
+}
+
+.rockPupil{
+  height: 13%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 2;
+}
+
+.rockPupil ellipse{
+  fill: #A76227;
+}
+.rockPupil circle{
+  fill: #A76227;
+}
+
+#rockPupil2{
+  height: 20%;
+  left: 22%;
+}
+#rockPupil3{
+  height: 9%;
+  top: 30%;
+  left: 23%;
+}
+#rockPupil4{
+  left: 25%;
+  top: 29%;
+  height: 10%;
+}
+#rockPupil5{
+  height: 22%;
+  left: 23%;
+}
+#rockPupil6{
+  height: 10%;
+  left: 21.5%;
+  top: 29%;
+}
+
+
+#bottomBar{
+  width: 100%;
+  height: 300px;
+  left: 0px;
+  /* opacity: .8; */
+  background-color: black;
+  position: absolute;
+  padding: 10px;
+}
+
+.white{
+  color: white;
+}
+
+
+/* Javasc
+List of rockSpace
+Convert svg to components
+
+ */
