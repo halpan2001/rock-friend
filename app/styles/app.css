@@ -2,7 +2,7 @@ body{
   padding: 20px;
   font-family: sans-serif;
   color: black;
-  background-color: #7FA8A6;
+  background-color: #A59197;
 }
 /* APPLICATION.HBS */
 #title{
@@ -209,7 +209,7 @@ body{
   position: relative;
 }
 #pickBackgroundColor{
-  background-color: #7FA8A6;
+  background-color: #A59197;
 }
 #pickBodyColor{
   background-color: #5AB1BB;
@@ -237,15 +237,22 @@ body{
 .selectDiv{
   width: 90px;
   height: 60px;
-  /* border: 1px white solid; */
+  border: 1px transparent solid;
+  border-radius: 5px;
   position: relative;
+  transition: ease;
+  transition-duration: .2s;
 }
-.selectDiv svg:hover{
-  border-radius: 1px white solid;
+.selectDiv:hover{
+  border: 1px white solid;
+  transition: ease;
+  transition-duration: .2s;
+
 }
 
 #pickEyeBall{
   width: 200px;
+  margin-left: 20px;
 }
 #pickBody{
 }
@@ -283,6 +290,28 @@ body{
   margin-right: 100px;
 }
 
+/* SHARE PAGE */
+
+#shareDiv{
+  width: 800px;
+  display: flex;
+
+}
+
+#shareDiv div{
+  width: 800px;
+  height: 100%;
+  float:left;
+  border: red 1px solid;
+  margin-left: 30px;
+  position: relative;
+}
+
+.shareOption{
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 /* Javasc
 List of rockSpace
 Convert svg to components
