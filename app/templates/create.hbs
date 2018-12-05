@@ -2,12 +2,15 @@
     <img class="createTitleText" src="/assets/svg/Color.svg" alt="Color"/>
     <div class="pickContent">
       <div id="colorSquares">
-        <div id="pickBackgroundColor">
-        </div>
-        <div id="pickBodyColor">
+        {{spectrum-color-picker color=model.bColor showInput=true preferredFormat="hex"}}
+        {{spectrum-color-picker color=model.rColor showInput=true preferredFormat="hex"}}
+        {{spectrum-color-picker color=model.pColor showInput=true preferredFormat="hex"}}
+        <!-- <div id="pickBackgroundColor">
+        </div> -->
+        <!-- <div id="pickBodyColor">
         </div>
         <div id="pickPupilColor">
-        </div>
+        </div> -->
       </div>
       <div id="colorText">
         <img src="/assets/svg/Background.svg" alt="Background" />

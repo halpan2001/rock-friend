@@ -7,4 +7,5 @@ export default DS.Model.extend({
   pupil: DS.attr('string'),
   pColor:DS.attr('string'),
   rColor: DS.attr('string'),
+  bColor: DS.attr('string')
 });
