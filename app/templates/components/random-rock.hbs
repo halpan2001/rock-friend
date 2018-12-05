@@ -1,0 +1,15 @@
+  <form onsubmit={{action "randomRock" @rock}}>
+    <label for="title">Title: </label>
+    {{input id="titleIn" type="text" id="titleIn" value=title}}
+    <br />
+    <label for="firstName">First Name: </label>
+    {{input id="firstName" type="text" id="firstName" value=firstName}}
+    <br />
+    <label for="lastName">Last Name: </label>
+    {{input id="lastName" type="text" id="lastName" value=lastName}}
+    <br />
+    <button type="submit">NEW ROCK</button>
+  </form>
+
+
+{{yield}}

@@ -78,12 +78,10 @@
   <div id="rockContainer">
     <div id="rockSpace">
       {{#each model as |rock|}}
-      <!-- {{rock.rock}}
-      {{rock.eye}}
-      {{rock.pupil}} -->
       <Rock-1/>
       <Eye-Ball-1/>
       <Pupil-1/>
+      {{set-colors rock.bColor rock.rColor rock.pColor}}
       {{/each}}
     </div>
     <div id="rockName">
