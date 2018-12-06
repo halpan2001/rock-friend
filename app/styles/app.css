@@ -26,6 +26,7 @@ body{
 
 #sideBar{
   width: 20%;
+  height: 350px;
   /* border: 1px red solid; */
   position: relative;
   float: left;
@@ -57,31 +58,35 @@ body{
 
 #editBar{
   position: absolute;
-  border: red 1px solid;
+  /* border: red 1px solid; */
   width: 100px;
   height: 400px;
   right: 0px;
   top: 50px;
   z-index: 1;
   padding: 10px;
-
-
 }
 
 #rockContainer{
   /* border: 1px red solid; */
-  positiion: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  position: absolute;
   height: 400px;
   width: 80%;
+  right:0px;
+  z-index: 10;
 }
+#rockCenter{
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+
+}
+
 #rockSpace{
   width: 400px;
   height: 230px;
   /* border: 1px solid blue; */
-  position: relative;
+  position: absolute;
 }
 #rockName{
   /* border: 1px solid red; */
@@ -89,7 +94,7 @@ body{
   height: 50px;
   font-size: 24pt;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 260px;
 }
 
 .rockBody{
@@ -97,7 +102,7 @@ body{
   z-index: 1;
 }
 .rockBody path{
-  fill: #5AB1BB;
+  fill: #000000;
 }
 #rock4{
   /* border: 1px solid red; */
@@ -176,6 +181,7 @@ body{
   /* opacity: .8; */
   background-color: black;
   position: absolute;
+  bottom: 0px;
   padding: 10px;
   padding-left: 5%;
   display: flex;
@@ -190,6 +196,25 @@ body{
 
 .white{
   color: white;
+}
+
+.dataButton{
+  border:none;
+  background-color: black;
+  color: white;
+  font-size: 18pt;
+  border: 1px white solid;
+  border-radius: 3px;
+  transition: ease;
+  transition-duration: .2s;
+}
+
+.dataButton:hover{
+  background-color: white;
+  color: black;
+  transition: ease;
+  transition-duration: .2s;
+
 }
 
 /* CREATE.HBS */
@@ -285,6 +310,11 @@ body{
   transition: ease;
   transition-duration: .5s;
 }
+.dataOption text{
+  fill: white;
+  transition: ease;
+  transition-duration: .5s;
+}
 
 .dataOption:hover{
   background-color: white;
@@ -325,8 +355,85 @@ body{
   margin-bottom: 20px;
   margin-top: 10px;
 }
-/* Javasc
-List of rockSpace
-Convert svg to components
 
- */
+/* LOADING SUBSTATE */
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #f4f6ff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+.loading{
+  text-align: center;
+  width: 100%
+}
+
+/* ERROR SUBSTATE */
+
+#errorRock{
+  width: 400px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#errorQ{
+  position: absolute;
+  font-size: 128pt;
+  left: 160px;
+  top: 10px;
+  z-index: 10;
+
+}

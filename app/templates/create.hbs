@@ -1,3 +1,19 @@
+<div id="rockContainer">
+  <div id="rockCenter">
+    <div id="rockSpace">
+      <Rock-1/>
+      <Eye-Ball-1/>
+      <Pupil-1/>
+      {{set-colors model.bColor model.rColor model.pColor}}
+    </div>
+  </div>
+  <div id="rockName">
+    {{model.name}}
+  </div>
+</div>
+
+<div id="bottomBar" class="white">
+  CREATE
   <div id="pickColor">
     <img class="createTitleText" src="/assets/svg/Color.svg" alt="Color"/>
     <div class="pickContent">
@@ -143,24 +159,11 @@
     </div>
   </div> -->
   <div id="pickData">
-    <!-- SAVE -->
-    <svg class="dataOption" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.17 57.04">
-      <defs>
-        <style>.cls-1{font-size:48.79px;fill:#fff;font-family:BobbyJonesSoft-Regular, Bobby Jones Soft;}.cls-2{letter-spacing:-0.03em;}.cls-3{letter-spacing:-0.07em;}.cls-4{letter-spacing:-0.03em;}</style>
-      </defs>
-      <title>Save</title>
-      <g id="Layer_2" data-name="Layer 2">
-        <g id="Website">
-          <text class="cls-1" transform="translate(0 41.77)">
-            <tspan class="cls-2">S</tspan>
-            <tspan class="cls-3" x="23.81" y="0">a</tspan>
-            <tspan class="cls-4" x="47.53" y="0">v</tspan>
-            <tspan x="71.39" y="0">e</tspan>
-          </text>
-        </g>
-      </g>
-    </svg>
-    <!-- SAVE NEW -->
+    <SaveRock class="dataButton" @defaultText="Save"
+              @workingText="Saving..."
+              @onClick={{action "saveNew" model}}/>
+    <!-- SAVE NEW (SVG)-->
+    <!-- <div onclick={{action "saveNew" model}}>
     <svg class="dataOption" id="saveNew" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.08 115.59">
       <defs>
         <style>.cls-1{font-size:48.79px;fill:#fff;font-family:BobbyJonesSoft-Regular, Bobby Jones Soft;}.cls-2{letter-spacing:-0.03em;}.cls-3{letter-spacing:-0.07em;}.cls-4{letter-spacing:-0.03em;}.cls-5{letter-spacing:0em;}</style>
@@ -177,21 +180,9 @@
         </g>
       </g>
     </svg>
-    <!-- DELETE -->
-    <svg class="dataOption" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.11 57.04">
-      <defs>
-        <style>.cls-1{font-size:48.79px;fill:#fff;font-family:BobbyJonesSoft-Regular, Bobby Jones Soft;}.cls-2{letter-spacing:-0.01em;}</style>
-      </defs>
-      <title>Delete</title>
-      <g id="Layer_2" data-name="Layer 2">
-        <g id="Website">
-          <text class="cls-1" transform="translate(0 41.77)">
-            De<tspan class="cls-2" x="51.09" y="0">l</tspan>
-            <tspan x="70.65" y="0">ete</tspan>
-          </text>
-        </g>
-      </g>
-    </svg>
+    </div> -->
+
   </div>
+</div>
 
 {{outlet}}

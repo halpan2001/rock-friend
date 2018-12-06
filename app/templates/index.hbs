@@ -1,4 +1,18 @@
-<div class="white">
+<div id="rockContainer">
+  <div id="rockCenter">
+    <div id="rockSpace">
+      <Rock-1/>
+      <Eye-Ball-1/>
+      <Pupil-1/>
+      {{set-colors model.bColor model.rColor model.pColor}}
+    </div>
+  </div>
+  <div id="rockName">
+    {{model.name}}
+  </div>
+</div>
+
+<div id="bottomBar" class="white">
   <Random-Rock @rock={{model}}/>
 </div>
 

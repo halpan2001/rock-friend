@@ -8,15 +8,15 @@
 
 <div id="editBar">
   Rock Friends <br />
-  {{#each model as |rock|}}
+  {{#each model}}
+    {{#link-to "edit"}}
     <Rock-1/>
-    {{set-colors rock.rColor}}
-  {{/each}}
-  {{#each model as |rock|}}
-    <Rock-1/>
-    {{set-colors rock.rColor}}
+    {{set-colors model.rColor}}
+    {{/link-to}}
   {{/each}}
 </div>
+
+{{outlet}}
 
 <div id="mainContainer">
 <div id="sideBar">
@@ -72,26 +72,4 @@
   </svg>
   {{/link-to}}
 </div>
-
-
-
-  <div id="rockContainer">
-    <div id="rockSpace">
-      {{#each model as |rock|}}
-      <Rock-1/>
-      <Eye-Ball-1/>
-      <Pupil-1/>
-      {{set-colors rock.bColor rock.rColor rock.pColor}}
-      {{/each}}
-    </div>
-    <div id="rockName">
-      {{#each model as |rock|}}
-      {{rock.name}}
-      {{/each}}
-    </div>
-  </div>
-</div>
-
-<div id="bottomBar">
-{{outlet}}
 </div>
