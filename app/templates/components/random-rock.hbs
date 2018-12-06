@@ -1,15 +1,18 @@
-  <form onsubmit={{action "randomRock" @rock}}>
-    <label for="title">Title: </label>
-    {{input id="titleIn" type="text" id="titleIn" value=title}}
-    <br />
-    <label for="firstName">First Name: </label>
-    {{input id="firstName" type="text" id="firstName" value=firstName}}
-    <br />
-    <label for="lastName">Last Name: </label>
-    {{input id="lastName" type="text" id="lastName" value=lastName}}
-    <br />
-    <button type="submit">NEW ROCK</button>
-  </form>
-
+<div class="dataOption" onclick={{action "randomRock" @rock}}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284.75 82.5">
+    <defs><style>.cls-1{font-size:70.57px;fill:#fff;font-family:BobbyJonesSoft-Regular, Bobby Jones Soft;}.cls-2{letter-spacing:-0.03em;}</style></defs>
+    <title>New Rock</title>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Website">
+        <text class="cls-1" transform="translate(0 60.41)">New
+          <tspan class="cls-2" x="131.61" y="0">R</tspan>
+          <tspan x="167.68" y="0">o</tspan>
+          <tspan class="cls-2" x="207.76" y="0">c</tspan>
+          <tspan x="243.26" y="0">k</tspan>
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
 
 {{yield}}

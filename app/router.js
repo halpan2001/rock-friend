@@ -7,11 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('random', {path: '/random'}, function() {
+    this.route('create', {path: '/create'});
+    this.route('share', {path: '/share'});
+    this.route('about', {path: '/about'});
 
-  });
-  this.route('create', {path: '/create'});
-  this.route('edit', {path: '/edit'});
 });
 
 export default Router;
