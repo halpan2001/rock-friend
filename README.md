@@ -1,9 +1,19 @@
 [![Build Status](https://travis-ci.org/halpan2001/rock-friend.svg?branch=master)](https://travis-ci.org/halpan2001/rock-friend)
 
 # rock-friend
+ITP 404 - Hal Pan 2018
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Rock Friend generates random rocks and allows users to customize their own rock.
+The home page will be the automatic random generation of the creature.
+The about page will help explain to the user how to make the site and it's goals
+The custom page will allow the visitor to create a monster with their own parameters.
+The collection will display the monsters the visitor has made and will also allow them to view and edit the monster.
+
+This site uses the Ember spectrum color pick addon:
+* https://github.com/RSSchermer/ember-spectrum-color-picker
+
+The inspiration for the site is the Chrome plugin Tabby Cat: https://chrome.google.com/webstore/detail/tabby-cat/mefhakmgclhhfbdadeojlkbllmecialg?hl=en
+
 
 ## Prerequisites
 
