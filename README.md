@@ -14,6 +14,9 @@ This site uses the Ember spectrum color pick addon:
 
 The inspiration for the site is the Chrome plugin Tabby Cat: https://chrome.google.com/webstore/detail/tabby-cat/mefhakmgclhhfbdadeojlkbllmecialg?hl=en
 
+Find the project on Surge!
+http://rock-friend.surge.sh/
+
 
 ## Prerequisites
 
