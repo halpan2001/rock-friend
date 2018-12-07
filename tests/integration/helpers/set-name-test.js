@@ -12,6 +12,6 @@ module('Integration | Helper | set-name', function(hooks) {
 
     await render(hbs`{{set-name inputValue}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), 'Set Name');
   });
 });

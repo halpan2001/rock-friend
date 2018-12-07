@@ -13,7 +13,6 @@ export default Component.extend({
   },
 
   click() {
-    console.log('clicked');
     this.set('isPending', true);
     this.set('buttonText', this.workingText);
     this.onClick().then(() => {

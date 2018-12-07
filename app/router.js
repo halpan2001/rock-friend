@@ -10,8 +10,7 @@ Router.map(function() {
   this.route('create', {path: '/create'});
   this.route('share', {path: '/share'});
   this.route('about', {path: '/about'});
-
-  this.route('edit');
+  this.route('edit', {path: '/edit/:id'});
 });
 
 export default Router;

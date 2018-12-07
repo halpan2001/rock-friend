@@ -14,7 +14,7 @@ export function setColors(params/*, hash*/) {
 
   let pupilEllipse = document.getElementsByClassName("pupilEllipse");
   // console.log(rockPath);
-  for (var i = 0; i < pupilEllipse.length; i++) {
+  for (var j = 0; j < pupilEllipse.length; j++) {
         // console.log(rockPath[i]);
         pupilEllipse[i].style.fill = pColor;
     }

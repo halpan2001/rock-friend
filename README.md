@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/halpan2001/rock-friend.svg?branch=master)](https://travis-ci.org/halpan2001/rock-friend)
+
 # rock-friend
 
 This README outlines the details of collaborating on this Ember application.

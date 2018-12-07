@@ -1,15 +1,36 @@
-<form class="white" onsubmit={{action "setName" @rock}}>
-  <label for="title">Title: </label>
-  {{input id="titleIn" type="text" id="titleIn" value=title}}
-  <br />
-  <label for="firstName">First Name: </label>
-  {{input id="firstName" type="text" id="firstName" value=firstName}}
-  <br />
-  <label for="lastName">Last Name: </label>
-  {{input id="lastName" type="text" id="lastName" value=lastName}}
-  <br />
+<form
+  class="white"
+  onsubmit={{action "setName" @rock}}
+>
+  {{input
+    placeholder="Title"
+    id="titleIn"
+    type="text"
+    value=title
+  }}
+  <br>
+  {{input
+    placeholder="First Name"
+    id="firstName"
+    type="text"
+    value=firstName
+  }}
+  <br>
+  {{input
+    placeholder="Last Name"
+    class="input"
+    id="lastName"
+    type="text"
+    value=lastName
+  }}
+  <br>
 
-<button class="dataButton" type="submit" data-test="setName" >Set Name</button>
+  <button
+    class="dataButton"
+    type="submit"
+    data-test="setName"
+  > Set Name
+  </button>
 </form>
 
 {{yield}}

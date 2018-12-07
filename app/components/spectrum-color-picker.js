@@ -2,8 +2,8 @@ import SpectrumColorPickerComponent from 'ember-spectrum-color-picker/components
 
 export default SpectrumColorPickerComponent.extend({
   actions:{
-    colorChange(newValue){
-      console.log(newValue);
+    colorChange(){
+      // console.log(newValue);
     },
 
   },

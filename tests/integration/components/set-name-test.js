@@ -12,15 +12,14 @@ module('Integration | Component | set-name', function(hooks) {
 
     await render(hbs`{{set-name}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), 'Set Name');
 
     // Template block usage:
-    await render(hbs`
-      {{#set-name}}
-        template block text
-      {{/set-name}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // await render(hbs`
+    //   {{#set-name}}
+    //   {{/set-name}}
+    // `);
+    //
+    // assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

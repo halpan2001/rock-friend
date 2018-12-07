@@ -17,10 +17,10 @@ module('Integration | Component | save-rock', function(hooks) {
     // Template block usage:
     await render(hbs`
       {{#save-rock}}
-        template block text
+
       {{/save-rock}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), '');
   });
 });

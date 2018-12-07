@@ -12,6 +12,6 @@ module('Integration | Helper | set-colors', function(hooks) {
 
     await render(hbs`{{set-colors inputValue}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), '');
   });
 });

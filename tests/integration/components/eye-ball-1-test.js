@@ -12,15 +12,15 @@ module('Integration | Component | eye-ball-1', function(hooks) {
 
     await render(hbs`{{eye-ball-1}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), '.cls-1{fill:#fff;}EyeBall1');
 
-    // Template block usage:
-    await render(hbs`
-      {{#eye-ball-1}}
-        template block text
-      {{/eye-ball-1}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // // Template block usage:
+    // await render(hbs`
+    //   {{#eye-ball-1}}
+    //     template block text
+    //   {{/eye-ball-1}}
+    // `);
+    //
+    // assert.equal(this.element.textContent.trim(), '.cls-1{fill:#fff;}EyeBall1');
   });
 });

@@ -12,15 +12,15 @@ module('Integration | Component | pupil-1', function(hooks) {
 
     await render(hbs`{{pupil-1}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), '.cls-1{fill:#605122;}Pupil1');
 
     // Template block usage:
-    await render(hbs`
-      {{#pupil-1}}
-        template block text
-      {{/pupil-1}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // await render(hbs`
+    //   {{#pupil-1}}
+    //     template block text
+    //   {{/pupil-1}}
+    // `);
+    //
+    // assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

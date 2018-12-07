@@ -15,173 +15,32 @@
 <div id="bottomBar" class="white">
   CREATE
   <div id="pickColor">
-    <img class="createTitleText" src="/assets/svg/Color.svg" alt="Color"/>
+    <img class="createTitleText" src="/assets/svg/Color.svg" alt="Color">
     <div class="pickContent">
       <div id="colorSquares">
         {{spectrum-color-picker color=model.bColor}}
         {{spectrum-color-picker color=model.rColor}}
         {{spectrum-color-picker color=model.pColor}}
-        <!-- <div id="pickBackgroundColor">
-        </div> -->
-        <!-- <div id="pickBodyColor">
-        </div>
-        <div id="pickPupilColor">
-        </div> -->
       </div>
       <div id="colorText">
-        <img src="/assets/svg/Background.svg" alt="Background" />
-        <img src="/assets/svg/Body.svg" alt="Body" />
-        <img src="/assets/svg/Pupils.svg" alt="Pupils" />
+        <img src="/assets/svg/Background.svg" alt="Background" >
+        <img src="/assets/svg/Body.svg" alt="Body" >
+        <img src="/assets/svg/Pupils.svg" alt="Pupils" >
       </div>
     </div>
   </div>
   <div id="setName">
-    <img class="createTitleText" src="/assets/svg/Name.svg" alt="Name"/>
+    <img class="createTitleText" src="/assets/svg/Name.svg" alt="Name">
     <Set-Name @rock={{model}}></Set-Name>
   </div>
-  <!-- <div id="pickPupil">
-    <img class="createTitleText" src="/assets/svg/Pupils.svg" />
-    <div class="pickContent">
-      <table>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-1/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-2/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-3/>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-4/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-5/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-              <Pupil-6/>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div id="pickEyeBall">
-    <img class="createTitleText" src="/assets/svg/EyeBalls.svg" />
-    <div class="pickContent">
-      <table>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-1/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-2/>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-3/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Eye-Ball-4/>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div id="pickBody">
-    <img class="createTitleText" src="/assets/svg/Bodies.svg" />
-    <div class="pickContent">
-      <table>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Rock-1/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Rock-2/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Rock-3/>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="selectDiv">
-              <Rock-4/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Rock-5/>
-            </div>
-          </td>
-          <td>
-            <div class="selectDiv">
-              <Rock-6/>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div> -->
-  <div id="pickData">
-    <SaveRock class="dataButton" @defaultText="Save"
-              @workingText="Saving..."
-              @onClick={{action "saveNew" model}}/>
-    <!-- SAVE NEW (SVG)-->
-    <!-- <div onclick={{action "saveNew" model}}>
-    <svg class="dataOption" id="saveNew" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.08 115.59">
-      <defs>
-        <style>.cls-1{font-size:48.79px;fill:#fff;font-family:BobbyJonesSoft-Regular, Bobby Jones Soft;}.cls-2{letter-spacing:-0.03em;}.cls-3{letter-spacing:-0.07em;}.cls-4{letter-spacing:-0.03em;}.cls-5{letter-spacing:0em;}</style>
-      </defs>
-      <title>SaveNew</title>
-      <g id="Layer_2" data-name="Layer 2">
-        <g id="Website">
-          <text class="cls-1" transform="translate(0 41.77)">
-            <tspan class="cls-2">s<tspan class="cls-3" x="23.71" y="0">a</tspan>
-            <tspan class="cls-4" x="47.43" y="0">v</tspan>
-            <tspan class="cls-5" x="71.29" y="0">e</tspan></tspan>
-            <tspan x="0" y="58.55">new</tspan>
-          </text>
-        </g>
-      </g>
-    </svg>
-    </div> -->
 
+  <div id="pickData">
+    <SaveRock
+      class="dataButton"
+      @defaultText="Save"
+      @workingText="Saving..."
+      @onClick={{action "saveNew" model}}
+    />
   </div>
 </div>
 
