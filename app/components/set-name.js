@@ -4,10 +4,26 @@ export default Component.extend({
   actions:{
     setName(rock, event){
       event.preventDefault();
+      let nameValid = false;
+
+      if (this.title != null){
+        nameValid = true;
+      }
+
+      if (this.firstName != null){
+        nameValid = true;
+      }
+
+      if (this.firstName != null){
+        nameValid = true;
+      }
 
       let rockName = this.title + " " + this.firstName + " " + this.lastName;
 
-      rock.set('name', rockName);
+      if (nameValid == true){
+        rock.set('name', rockName);
+      }
+
     }
   }
 });

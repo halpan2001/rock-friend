@@ -7,7 +7,7 @@
       {{set-colors model.bColor model.rColor model.pColor}}
     </div>
   </div>
-  <div id="rockName">
+  <div id="rockName" data-test="rockName">
     {{model.name}}
   </div>
 </div>
@@ -48,6 +48,7 @@
       @onClick={{action "editRock" model}}
     />
     <SaveRock
+      data-test="deleteRock"
       class="dataButton"
       @defaultText="Delete"
       @workingText = "Deleting..."

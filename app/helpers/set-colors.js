@@ -16,7 +16,7 @@ export function setColors(params/*, hash*/) {
   // console.log(rockPath);
   for (var j = 0; j < pupilEllipse.length; j++) {
         // console.log(rockPath[i]);
-        pupilEllipse[i].style.fill = pColor;
+        pupilEllipse[j].style.fill = pColor;
     }
 
   let body = document.getElementsByTagName('body');

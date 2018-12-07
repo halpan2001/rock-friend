@@ -9,6 +9,10 @@
     value=title
   }}
   <br>
+  <div class="fillwarn">
+    <InputFill class="fillCheck" @text={{title}} data-test="input-fill"/>
+  </div>
+
   {{input
     placeholder="First Name"
     id="firstName"
@@ -16,6 +20,10 @@
     value=firstName
   }}
   <br>
+  <div class="fillwarn">
+    <InputFill class="fillCheck" @text={{firstName}} data-test="input-fill"/>
+  </div>
+
   {{input
     placeholder="Last Name"
     class="input"
@@ -24,7 +32,10 @@
     value=lastName
   }}
   <br>
-
+  <div class="fillwarn">
+    <InputFill class="fillCheck" @text={{lastName}} data-test="input-fill"/>
+  </div>
+  <br>
   <button
     class="dataButton"
     type="submit"

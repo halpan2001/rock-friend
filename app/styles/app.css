@@ -6,6 +6,10 @@ body{
   font-family: 'Varela Round', sans-serif;
 }
 /* APPLICATION.HBS */
+.about{
+  font-size: 18pt;
+}
+
 #title{
   font-size: 32pt;
   font-weight: 600;
@@ -337,7 +341,12 @@ body{
 input{
   border: none;
   font-size: 14pt;
-  margin-bottom: 10px;
+}
+
+.fillwarn{
+  /* border: red 1px solid; */
+  height: 20px;
+  width: 100%;
 }
 
 /* SHARE PAGE */

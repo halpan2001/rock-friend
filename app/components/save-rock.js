@@ -15,9 +15,10 @@ export default Component.extend({
   click() {
     this.set('isPending', true);
     this.set('buttonText', this.workingText);
-    this.onClick().then(() => {
-      this.set('buttonText', this.defaultText);
-      this.set('isPending', false);
-    });
+    this.onClick();
+    // .then(() => {
+    //   this.set('buttonText', this.defaultText);
+    //   this.set('isPending', false);
+    // });
   }
 });
